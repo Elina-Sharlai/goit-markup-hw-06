@@ -52,6 +52,108 @@
             </li>
           </ul>
         </address>
+
+        <!-- Mobile menu -->
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button
+            class="modal-btn mobile-menu-close"
+            data-menu-close=""
+            type="button"
+          >
+            <svg class="modal-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li>
+                <a href="">Studio</a>
+              </li>
+              <li>
+                <a href="">Portfolio</a>
+              </li>
+              <li>
+                <a href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <address class="mobile-address">
+            <ul class="mobile-contacts-list">
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-socials socials">
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Link to Instagram"
+              >
+                <svg class="socials-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Link to Twitter"
+              >
+                <svg class="socials-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Link to Facebook"
+              >
+                <svg class="socials-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Link to linkedin"
+              >
+                <svg class="socials-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -123,12 +225,16 @@
       </section>
       <!--Our Team section  -->
       <section class="section team-section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/mobile/img_mob@1x.jpg 1x,
+                  ./images/mobile/img_mob@2x.jpg 2x
+                "
                 src="./images/Mark.img.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -197,6 +303,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/mobile/img_mob@1x-1.jpg 1x,
+                  ./images/mobile/img_mob@2x-1.jpg 2x
+                "
                 src="./images/Tom.img.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -264,6 +374,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/mobile/img_mob@1x-2.jpg 1x,
+                  ./images/mobile/img_mob@2x-2.jpg 2x
+                "
                 src="./images/Camila.img.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -332,6 +446,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/mobile/img_mob@1x-3.jpg 1x,
+                  ./images/mobile/img_mob@2x-3.jpg 2x
+                "
                 src="./images/Daniel.img.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -530,7 +648,7 @@
       </section>
     </main>
     <!-- Footer section -->
-    <footer class="footer-section">
+    <footer class="section footer-section">
       <div class="container footer-container">
         <div class="footer-top">
           <a class="logo footer-logo" href="./index.html"
@@ -623,9 +741,9 @@
 
     <!-- Modal section -->
 
-    <div class="backdrop data-modal">
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
-        <button class="modal-btn data-modal-close" type="button">
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -718,5 +836,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
