@@ -85,74 +85,78 @@
               </li>
             </ul>
           </nav>
-          <address class="mobile-address">
-            <ul class="mobile-contacts-list">
-              <li class="mobile-contacts-item">
-                <a class="mobile-contacts-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
+          <div class="mobile-group">
+            <address class="mobile-address">
+              <ul class="mobile-contacts-list">
+                <li class="mobile-contacts-item">
+                  <a class="mobile-contacts-link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-contacts-item">
+                  <a
+                    class="mobile-contacts-link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-menu-socials socials">
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Instagram"
                 >
+                  <svg class="socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="mobile-contacts-item">
-                <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Twitter"
                 >
+                  <svg class="socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Facebook"
+                >
+                  <svg class="socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to linkedin"
+                >
+                  <svg class="socials-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-          <ul class="mobile-menu-socials socials">
-            <li class="socials-item">
-              <a
-                class="socials-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Instagram"
-              >
-                <svg class="socials-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Twitter"
-              >
-                <svg class="socials-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Facebook"
-              >
-                <svg class="socials-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials-item">
-              <a
-                class="socials-link"
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to linkedin"
-              >
-                <svg class="socials-icon" width="16" height="16">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -525,13 +529,22 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-wrapper">
-                <img
-                  class="portfolio-img"
-                  src="./images/portfolio/img-1.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/desktop/img_desk@1x_1.jpg 1x,
+                      ./images/desktop/img_desk@2x_1.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-img"
+                    src="./images/portfolio/img-1.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -821,15 +834,18 @@
               id="user-privacy"
               value="true"
             />
-            <label class="modal-form-agreement-text" for="user-privacy">
-              <span class="modal-form-checkbox">
-                <svg class="modal-form-checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-sign"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="modal-form-agreement-link" href="#">Privacy Policy</a>
-            </label>
+
+            <span>
+              <label class="modal-form-agreement-text" for="user-privacy">
+                <span class="modal-form-checkbox">
+                  <svg class="modal-form-checkbox-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-sign"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a class="modal-form-agreement-link" href="#">Privacy Policy</a>
+              </label>
+            </span>
           </div>
           <button class="btn" type="submit">Send</button>
         </form>
