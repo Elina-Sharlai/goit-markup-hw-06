@@ -469,26 +469,26 @@ img {
   }
 }
 
-/* @media only screen and (min-width: 768px) and (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-section{
-      background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url('../images/tablet/_tablet@2x.jpg');
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/tablet/_tablet@2x.jpg');
   }
-     
-  } */
-/* @media only screen and (min-width: 1158px) and (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-section{
-      background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url('../images/desktop/_desktop@2x.jpg');
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/desktop/_desktop@2x.jpg');
   }
-     
-  } */
+}
 
 @media screen and (min-width: 768px) {
   .hero-section {
