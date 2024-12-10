@@ -417,7 +417,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/mobile/_mobile@1x.jpg');
+    url('../images/mobile/@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -465,7 +465,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/mobile/@2x.jpg);
+      url('../images/mobile/@2x.jpg');
   }
 }
 
@@ -476,7 +476,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/@2x.jpg);
+      url('../images/tablet/@2x.jpg');
   }
 }
 @media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
@@ -486,7 +486,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/desktop/@2x.jpg);
+      url('../images/desktop/@2x.jpg');
   }
 }
 
@@ -496,7 +496,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/@1x.jpg);
+      url('../images/tablet/@1x.jpg');
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -507,7 +507,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/tablet/@2x.jpg);
+        url('../images/tablet/@2x.jpg');
     }
   }
 }
@@ -518,7 +518,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/desktop/@1x.jpg);
+      url('../images/desktop/@1x.jpg');
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -529,7 +529,7 @@ img {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/desktop/@2x.jpg);
+        url('../images/desktop/@2x.jpg');
     }
   }
 }
@@ -542,6 +542,13 @@ img {
   .hero-title {
     margin-bottom: 36px;
     max-width: 496px;
+  }
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/tablet/@1x.jpg');
   }
 }
 
@@ -559,6 +566,13 @@ img {
   .btn:hover,
   .btn:focus {
     background-color: #404bbf;
+  }
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/desktop/@1x.jpg');
   }
 }
 
