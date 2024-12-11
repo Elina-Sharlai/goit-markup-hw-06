@@ -283,6 +283,7 @@ img {
 }
 
 .mobile-menu-container {
+  max-width: 320px;
   position: relative;
   padding-top: 72px;
   padding-left: 16px;
@@ -320,8 +321,8 @@ img {
   transform: translateX(0);
 }
 .mobile-menu-close {
-  margin-top: 24px;
-  margin-right: 24px;
+  /* margin-top: 24px; */
+  /* margin-right: 24px; */
   margin-left: auto;
   border-radius: 50%;
   border: 1px;
@@ -334,8 +335,8 @@ img {
 .mobile-menu-nav {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
-  margin-bottom: auto;
+  /* margin-top: 24px; */
+  margin-bottom: 168px;
 }
 .mobile-address {
   margin-bottom: 48px;
@@ -399,7 +400,7 @@ img {
 
 .mobile-menu-socials.socials {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
   margin-top: auto;
 }
